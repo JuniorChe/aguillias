@@ -3,130 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aguililla Auto Detail | Premium Services</title>
+    <title>Aguililla Auto Detail | Premium Web Platform</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">AGUILILLA AUTO DETAIL</div>
-        <nav>
+    <header class="brand-header">
+        <div class="header-top-row">
+            <button id="lang-toggle" class="lang-selector-btn">
+                <i class="fa-solid fa-globe"></i> EN/ES
+            </button>
+            <h1 class="brand-title">AGUILILLA AUTO DETAIL</h1>
+            <div class="header-spacer"></div>
+        </div>
+        
+        <nav class="navigation-bar">
             <ul class="nav-links">
-                <li><a href="#home" class="lang-en">Home</a><a href="#home" class="lang-es hidden">Inicio</a></li>
-                <li><a href="#services" class="lang-en">Services</a><a href="#services" class="lang-es hidden">Servicios</a></li>
-                <li><a href="#gallery" class="lang-en">Gallery</a><a href="#gallery" class="lang-es hidden">Galería</a></li>
-                <li><a href="#contact" class="lang-en">Contact</a><a href="#contact" class="lang-es hidden">Contacto</a></li>
+                <li><a href="#home" class="active-link"><span class="lang-en">HOME</span><span class="lang-es hidden">INICIO</span></a></li>
+                <li><a href="#services"><span class="lang-en">SERVICES</span><span class="lang-es hidden">SERVICIOS</span></a></li>
+                <li><a href="#gallery"><span class="lang-en">GALLERY</span><span class="lang-es hidden">GALERÍA</span></a></li>
+                <li><a href="#about"><span class="lang-en">ABOUT</span><span class="lang-es hidden">NOSOTROS</span></a></li>
+                <li><a href="#contact"><span class="lang-en">CONTACT</span><span class="lang-es hidden">CONTACTO</span></a></li>
             </ul>
         </nav>
-        <button id="lang-toggle" class="btn-lang">ES / EN</button>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="lang-en">Your Premium Detailing Experience</h1>
-            <h1 class="lang-es hidden">Tu Experiencia de Detallado Premium</h1>
-            <p class="lang-en">Professional Auto Detailing & Mobile Services in Yakima, WA</p>
-            <p class="lang-es hidden">Servicios Profesionales de Detallado Automotriz y Móvil en Yakima, WA</p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn-primary lang-en">View Services</a>
-                <a href="#services" class="btn-primary lang-es hidden">Ver Servicios</a>
-                <a href="#contact" class="btn-secondary lang-en">Contact Us</a>
-                <a href="#contact" class="btn-secondary lang-es hidden">Contáctanos</a>
+    <section id="home" class="hero-showcase">
+        <div class="hero-text-overlay">
+            <h2>
+                <span class="lang-en">AGUILILLA AUTO DETAIL -<br>Your Premium Detailing Experience.</span>
+                <span class="lang-es hidden">AGUILILLA AUTO DETAIL -<br>Tu Experiencia de Detallado Premium.</span>
+            </h2>
+            <h3>
+                <span class="lang-en">Tu Experiencia de Detallado Premium.</span>
+                <span class="lang-es hidden">Tu Experiencia de Detallado Premium.</span>
+            </h3>
+            
+            <div class="hero-action-container">
+                <a href="#gallery" class="hero-btn white-btn">
+                    <span class="lang-en">DETAILED WORK</span>
+                    <span class="lang-es hidden">TRABAJO DETALLADO</span>
+                </a>
+                <a href="#contact" class="hero-btn gold-btn">
+                    <span class="lang-en">BOOK SERVICES</span>
+                    <span class="lang-es hidden">RESERVAR SERVICIOS</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2 class="section-title lang-en">Our Services & Offers</h2>
-            <h2 class="section-title lang-es hidden">Nuestros Servicios y Ofertas</h2>
+    <section id="services" class="marketing-grid-section">
+        <div class="content-wrapper grid-two-columns">
             
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="card-img-container">
-                        <img src="images/sefe.jpeg" alt="Aguililla Auto Detail Flyer">
+            <div class="marketing-card">
+                <div class="card-image-header">
+                    <img src="images/sefe.jpeg" alt="Aguililla Auto Detail Flyer Layout">
+                </div>
+                <div class="card-text-content">
+                    <p class="service-highlight text-center">
+                        <strong>CAR DETAIL SERVICES:</strong> Car Wash, Vacuuming, Shampoo Upholstery, Engine Detailing, Mobile Services
+                    </p>
+                    <p class="special-offer-text text-center">
+                        <strong>SPECIAL OFFER:</strong> We Buy Running or Non-Running Cars. / Compramos Autos Funcionando o No Funcionando.
+                    </p>
+                    
+                    <div class="divider-line"></div>
+                    
+                    <p class="service-highlight text-center font-small">
+                        <strong>ER ALL DETAIL SERVICES:</strong><br>
+                        Car Wash, Vacuuming, Shampoo Upholstery, Engine Detailing, Mobile Services
+                    </p>
+                    <p class="special-offer-text text-center font-small">
+                        <strong>SPECIAL OFFER:</strong> We Buy Running or Non-Running Upholstery de Motora o Especihlo o Non-Running Cars. / Compramos Autos Funcionando o No Funcionando.
+                    </p>
+                    
+                    <div class="schedule-box">
+                        <p>MONDAY - SATURDAY 8:00 AM - 7:00 PM</p>
+                        <p>LUNES - SÁBADO 8:00 AM - 7:00 PM</p>
                     </div>
-                    <div class="card-body">
-                        <h3 class="lang-en">Auto Detailing Showcase</h3>
-                        <h3 class="lang-es hidden">Exhibición de Detallado</h3>
-                        <ul class="service-list">
-                            <li><i class="fa-solid fa-car-wash"></i> <span class="lang-en">Car Wash & Vacuuming</span><span class="lang-es hidden">Lavado y Aspirado</span></li>
-                            <li><i class="fa-solid fa-soap"></i> <span class="lang-en">Shampoo Upholstery</span><span class="lang-es hidden">Lavado de Tapicería</span></li>
-                            <li><i class="fa-solid fa-screwdriver-wrench"></i> <span class="lang-en">Engine Detailing</span><span class="lang-es hidden">Lavado de Motor</span></li>
-                            <li><i class="fa-solid fa-truck-pickup"></i> <span class="lang-en">Mobile Services Available</span><span class="lang-es hidden">Disponible a Domicilio</span></li>
-                        </ul>
-                        <div class="special-notice">
-                            <p class="lang-en"><strong>SPECIAL OFFER:</strong> We Buy Running or Non-Running Cars!</p>
-                            <p class="lang-es hidden"><strong>OFERTA ESPECIAL:</strong> ¡Compramos Autos Funcionando o Sin Correr!</p>
+                    <div class="card-phone-footer">
+                        <i class="fa-solid fa-phone"></i> 509 834 9198 / JR 509 83349198
+                    </div>
+                </div>
+            </div>
+
+            <div class="marketing-card">
+                <div class="card-text-content">
+                    <h4 class="promo-header-title">FLATBED RENTAL & MOBILE SERVICE ADDITIONS</h4>
+                    <h5 class="promo-subtitle">ALQUILER DE PLATAFORMA Y ADICIONES DE SERVICIO MÓVIL</h5>
+                </div>
+                <div class="card-image-header image-padded">
+                    <img src="images/sefe2.jpeg" alt="Flatbed Logistics Flyer Asset">
+                </div>
+                <div class="card-text-content">
+                    <div class="flex-info-row">
+                        <div class="info-block-left">
+                            <p><strong>FLATBED RENTAL:</strong></p>
+                            <p>For transportation or heavy moves.</p>
+                            <p>Alquiler de plataforma para transporte o movimientos pesados.</p>
+                        </div>
+                        <div class="info-block-right">
+                            <ul class="bullet-feature-list">
+                               <li>• Lavado • Aspirado</li> 
+                               <li>• Lavado de Tapicería</li> 
+                               <li>• Lavado de Motor</li> 
+                               <li>• Disponible a Domicilio</li> 
+                            </ul>
+                            <div class="badge-hours">
+                                LUNES - SÁBADO<br>8:00 AM - 7:00 PM
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="card-img-container">
-                        <img src="images/sefe2.jpeg" alt="Flatbed Rental Flyer">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="lang-en">Flatbed Rental & Hauling</h3>
-                        <h3 class="lang-es hidden">Alquiler de Plataforma</h3>
-                        <p class="card-text lang-en">Need equipment or a vehicle moved? We offer flatbed rental options alongside our mobile operations.</p>
-                        <p class="card-text lang-es hidden">¿Necesita mover un vehículo o equipo? Ofrecemos opciones de alquiler de plataforma junto con nuestros servicios móviles.</p>
-                        <div class="hours-box">
-                            <i class="fa-regular fa-clock"></i> 
-                            <span class="lang-en">Mon - Sat: 8:00 AM - 7:00 PM</span>
-                            <span class="lang-es hidden">Lunes a Sábado: 8:00 AM - 7:00 PM</span>
-                        </div>
+                    
+                    <p class="notice-footer-text text-center">
+                        we buy We Buy Running or Non-Running Cars.<br>Compramos Autos Funcionando o No Funcionando.
+                    </p>
+                    <div class="card-phone-footer">
+                        <i class="fa-solid fa-phone"></i> 509 834 9198 / JR 509 8349198
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <section id="gallery" class="gallery-section">
-        <div class="container">
-            <h2 class="section-title lang-en">Our Work</h2>
-            <h2 class="section-title lang-es hidden">Nuestro Trabajo</h2>
-            <p class="section-subtitle lang-en">Real results from our premium detailing sessions</p>
-            <p class="section-subtitle lang-es hidden">Resultados reales de nuestras sesiones de detallado premium</p>
+    <section id="gallery" class="portfolio-showcase-section">
+        <div class="content-wrapper">
+            <h3 class="gallery-main-title">PREMIUM DETALLADO GALLERY</h3>
+            <h4 class="gallery-subtitle">GALERÍA DE DETALLADO PREMIUM</h4>
             
-            <div class="gallery-grid" id="portfolio-gallery">
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=600" alt="Paint Correction"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=600" alt="Interior Detail"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600" alt="Engine Wash"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=600" alt="Gloss Finish"></div>
+            <div class="portfolio-gallery-grid">
+                <div class="portfolio-img-card"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=500" alt="Exotic Detail Work"></div>
+                <div class="portfolio-img-card"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=500" alt="Wheel Care Finish"></div>
+                <div class="portfolio-img-card"><img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=500" alt="Cabin Steam Deep Cleaning"></div>
+                <div class="portfolio-img-card"><img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=500" alt="Engine Protection Layer"></div>
             </div>
-
-            <div class="center-btn">
-                <button id="add-work-trigger" class="btn-secondary">
-                    <i class="fa-solid fa-plus"></i> 
-                    <span class="lang-en">Add Future Work</span>
-                    <span class="lang-es hidden">Agregar Trabajo Futuro</span>
-                </button>
-            </div>
+            
+            <button class="expand-portfolio-btn">
+                VIEW MORE / VER MÁS (ADD YOUR WORK / AGREGUE SU TRABAJO)
+            </button>
         </div>
     </section>
 
-    <footer id="contact" class="main-footer">
-        <div class="container footer-content">
-            <div class="footer-info">
-                <h3>AGUILILLA AUTO DETAIL</h3>
-                <p class="lang-en">Premium detailing right to your door. Serving Yakima and surrounding areas.</p>
-                <p class="lang-es hidden">Detallado premium directo a tu puerta. Sirviendo a Yakima y áreas cercanas.</p>
-                <div class="contact-numbers">
-                    <p><i class="fa-solid fa-phone text-gold"></i> 509-834-9198 (JR)</p>
-                    <p><i class="fa-solid fa-phone text-gold"></i> 509-833-4269</p>
-                </div>
+    <footer id="contact" class="brand-footer-container">
+        <div class="footer-row-elements content-wrapper">
+            <div class="footer-phone-directory">
+                <span><i class="fa-solid fa-phone"></i> 509 834 9198</span>
+                <span><i class="fa-solid fa-phone"></i> 509 83349198</span>
             </div>
-            <div class="footer-socials">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <div class="footer-social-channels">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Aguililla Auto Detail. Hosted securely on Google Cloud Platform.</p>
+            <div class="cloud-hosting-tag">
+                <i class="fa-cloud fa-solid"></i> Google Cloud Hosting
+            </div>
         </div>
     </footer>
 
