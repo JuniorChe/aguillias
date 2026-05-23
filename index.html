@@ -3,123 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aguililla Auto Detail | Premium Web Platform</title>
+    <title>Aguililla Auto Detail</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="brand-header">
-        <div class="header-top-row">
-            <button id="lang-toggle" class="lang-selector-btn">
+    <header class="main-header">
+        <div class="header-top">
+            <button id="lang-toggle" class="lang-btn">
                 <i class="fa-solid fa-globe"></i> EN/ES
             </button>
-            <h1 class="brand-title">AGUILILLA AUTO DETAIL</h1>
-            <div class="header-spacer"></div>
+            <h1 class="main-logo">AGUILILLA AUTO DETAIL</h1>
+            <div class="header-right-space"></div>
         </div>
-        
-        <nav class="navigation-bar">
-            <ul class="nav-links">
-                <li><a href="#home" class="active-link"><span class="lang-en">HOME</span><span class="lang-es hidden">INICIO</span></a></li>
-                <li><a href="#services"><span class="lang-en">SERVICES</span><span class="lang-es hidden">SERVICIOS</span></a></li>
-                <li><a href="#gallery"><span class="lang-en">GALLERY</span><span class="lang-es hidden">GALERÍA</span></a></li>
-                <li><a href="#about"><span class="lang-en">ABOUT</span><span class="lang-es hidden">NOSOTROS</span></a></li>
-                <li><a href="#contact"><span class="lang-en">CONTACT</span><span class="lang-es hidden">CONTACTO</span></a></li>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-item active">HOME</a></li>
+                <li><a href="#services" class="nav-item">SERVICES</a></li>
+                <li><a href="#gallery" class="nav-item">GALLERY</a></li>
+                <li><a href="#about" class="nav-item">ABOUT</a></li>
+                <li><a href="#contact" class="nav-item">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero-showcase">
-        <div class="hero-text-overlay">
-            <h2>
-                <span class="lang-en">AGUILILLA AUTO DETAIL -<br>Your Premium Detailing Experience.</span>
-                <span class="lang-es hidden">AGUILILLA AUTO DETAIL -<br>Tu Experiencia de Detallado Premium.</span>
-            </h2>
-            <h3>
-                <span class="lang-en">Tu Experiencia de Detallado Premium.</span>
-                <span class="lang-es hidden">Tu Experiencia de Detallado Premium.</span>
-            </h3>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2 class="hero-title-en">AGUILILLA AUTO DETAIL -</h2>
+            <h2 class="hero-title-sub-en">Your Premium Detailing Experience.</h2>
+            <h2 class="hero-title-es">Tu Experiencia de Detallado Premium.</h2>
             
-            <div class="hero-action-container">
-                <a href="#gallery" class="hero-btn white-btn">
-                    <span class="lang-en">DETAILED WORK</span>
-                    <span class="lang-es hidden">TRABAJO DETALLADO</span>
+            <div class="hero-actions">
+                <a href="#gallery" class="hero-btn btn-white">
+                    DETAILED WORK<br><span class="sub-btn-text">TRABAJO DETALLADO</span>
                 </a>
-                <a href="#contact" class="hero-btn gold-btn">
-                    <span class="lang-en">BOOK SERVICES</span>
-                    <span class="lang-es hidden">RESERVAR SERVICIOS</span>
+                <a href="#contact" class="hero-btn btn-gold">
+                    BOOK SERVICES<br><span class="sub-btn-text">RESERVAR SERVICIOS</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="services" class="marketing-grid-section">
-        <div class="content-wrapper grid-two-columns">
+    <section id="services" class="cards-section">
+        <div class="cards-container">
             
-            <div class="marketing-card">
-                <div class="card-image-header">
-                    <img src="images/sefe.jpeg" alt="Aguililla Auto Detail Flyer Layout">
+            <div class="info-card">
+                <div class="card-img-wrapper">
+                    <img src="images/sefe.jpeg" alt="Aguililla Auto Detail Flyer">
                 </div>
-                <div class="card-text-content">
-                    <p class="service-highlight text-center">
-                        <strong>CAR DETAIL SERVICES:</strong> Car Wash, Vacuuming, Shampoo Upholstery, Engine Detailing, Mobile Services
+                <div class="card-content">
+                    <p class="text-block bold-text spacing-dense">
+                        CAR DETAIL SERVICES: Car Wash, Vacuuming,<br>Shampoo Upholstery, Engine Detailing, Mobile Services
                     </p>
-                    <p class="special-offer-text text-center">
-                        <strong>SPECIAL OFFER:</strong> We Buy Running or Non-Running Cars. / Compramos Autos Funcionando o No Funcionando.
-                    </p>
-                    
-                    <div class="divider-line"></div>
-                    
-                    <p class="service-highlight text-center font-small">
-                        <strong>ER ALL DETAIL SERVICES:</strong><br>
-                        Car Wash, Vacuuming, Shampoo Upholstery, Engine Detailing, Mobile Services
-                    </p>
-                    <p class="special-offer-text text-center font-small">
-                        <strong>SPECIAL OFFER:</strong> We Buy Running or Non-Running Upholstery de Motora o Especihlo o Non-Running Cars. / Compramos Autos Funcionando o No Funcionando.
+                    <p class="text-block bold-text color-red spacing-dense">
+                        SPECIAL OFFER: We Buy Running or Non-Running Cars.<br>/ Compramos Autos Funcionando o No Funcionando.
                     </p>
                     
-                    <div class="schedule-box">
-                        <p>MONDAY - SATURDAY 8:00 AM - 7:00 PM</p>
-                        <p>LUNES - SÁBADO 8:00 AM - 7:00 PM</p>
+                    <div class="card-divider"></div>
+                    
+                    <p class="text-block bold-text spacing-dense text-small">
+                        ER ALL DETAIL SERVICES:<br>Car Wash, Vacuuming, Shampoo Upholstery, Engine<br>Detailing, Mobile Services
+                    </p>
+                    <p class="text-block bold-text color-red spacing-dense text-small">
+                        SPECIAL OFFER: We Buy Running or Non-Running<br>Upholstery de Motora o Especihlo o Non-Running Cars.<br>/ Compramos Autos Funcionando o No Funcionando.
+                    </p>
+                    
+                    <div class="schedule-block">
+                        MONDAY-SATURDAY 8:00 AM-7:00 PM<br>LUNES-SABADO 8:00 AM-7:00 PM
                     </div>
-                    <div class="card-phone-footer">
+                    
+                    <div class="card-footer-phone">
                         <i class="fa-solid fa-phone"></i> 509 834 9198 / JR 509 83349198
                     </div>
                 </div>
             </div>
 
-            <div class="marketing-card">
-                <div class="card-text-content">
-                    <h4 class="promo-header-title">FLATBED RENTAL & MOBILE SERVICE ADDITIONS</h4>
-                    <h5 class="promo-subtitle">ALQUILER DE PLATAFORMA Y ADICIONES DE SERVICIO MÓVIL</h5>
+            <div class="info-card">
+                <div class="card-content padding-top-fix">
+                    <h3 class="flatbed-title">FLATBED RENTAL & MOBILE SERVICE ADDITIONS</h3>
+                    <h4 class="flatbed-subtitle">ALQUILER DE PLATAFORMA Y ADICIONES<br>DE SERVICIO MÓVIL</h4>
                 </div>
-                <div class="card-image-header image-padded">
-                    <img src="images/sefe2.jpeg" alt="Flatbed Logistics Flyer Asset">
+                
+                <div class="card-img-wrapper padding-x-classic">
+                    <img src="images/sefe2.jpeg" alt="Flatbed Rental Flyer" class="contain-img">
                 </div>
-                <div class="card-text-content">
-                    <div class="flex-info-row">
-                        <div class="info-block-left">
-                            <p><strong>FLATBED RENTAL:</strong></p>
-                            <p>For transportation or heavy moves.</p>
-                            <p>Alquiler de plataforma para transporte o movimientos pesados.</p>
+                
+                <div class="card-content">
+                    <div class="split-info-layout">
+                        <div class="split-left">
+                            <p class="bold-text">FLATBED RENTAL:</p>
+                            <p class="gray-text">For transportstion or heavy moves.</p>
+                            <p class="bold-text">Alquiler de plataforma para transporte o movimientos pesados.</p>
                         </div>
-                        <div class="info-block-right">
-                            <ul class="bullet-feature-list">
-                               <li>• Lavado • Aspirado</li> 
-                               <li>• Lavado de Tapicería</li> 
-                               <li>• Lavado de Motor</li> 
-                               <li>• Disponible a Domicilio</li> 
+                        <div class="split-right">
+                            <ul class="bullet-list-bold">
+                                <li>• Lavado • Aspirado</li>
+                                <li>• Lavado de Tapicería</li>
+                                <li>• Lavado de Motor</li>
+                                <li>• Disponible a Domicilio</li>
                             </ul>
-                            <div class="badge-hours">
-                                LUNES - SÁBADO<br>8:00 AM - 7:00 PM
+                            <div class="hours-badge-box">
+                                LUNES-SABADO<br>8:00 AM-7:00 PM
                             </div>
                         </div>
                     </div>
                     
-                    <p class="notice-footer-text text-center">
+                    <p class="footer-notice-text bold-text">
                         we buy We Buy Running or Non-Running Cars.<br>Compramos Autos Funcionando o No Funcionando.
                     </p>
-                    <div class="card-phone-footer">
+                    
+                    <div class="card-footer-phone">
                         <i class="fa-solid fa-phone"></i> 509 834 9198 / JR 509 8349198
                     </div>
                 </div>
@@ -128,41 +122,40 @@
         </div>
     </section>
 
-    <section id="gallery" class="portfolio-showcase-section">
-        <div class="content-wrapper">
-            <h3 class="gallery-main-title">PREMIUM DETALLADO GALLERY</h3>
-            <h4 class="gallery-subtitle">GALERÍA DE DETALLADO PREMIUM</h4>
+    <section id="gallery" class="gallery-section">
+        <div class="gallery-container">
+            <h3 class="gallery-main-heading">PREMIUM DETALLADO GALLERY</h3>
+            <h4 class="gallery-sub-heading">GALERÍA DE DETALLADO PREMIUM</h4>
             
-            <div class="portfolio-gallery-grid">
-                <div class="portfolio-img-card"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=500" alt="Exotic Detail Work"></div>
-                <div class="portfolio-img-card"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=500" alt="Wheel Care Finish"></div>
-                <div class="portfolio-img-card"><img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=500" alt="Cabin Steam Deep Cleaning"></div>
-                <div class="portfolio-img-card"><img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=500" alt="Engine Protection Layer"></div>
+            <div class="gallery-photo-grid">
+                <div class="photo-frame"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=500" alt="Jaguar Frontal View"></div>
+                <div class="photo-frame"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=500" alt="Alloy Wheel Deep Gloss"></div>
+                <div class="photo-frame"><img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=500" alt="Luxury Sedan Cabin View"></div>
+                <div class="photo-frame"><img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=500" alt="Clean Engine Bay Layout"></div>
             </div>
             
-            <button class="expand-portfolio-btn">
+            <button class="gallery-action-bar">
                 VIEW MORE / VER MÁS (ADD YOUR WORK / AGREGUE SU TRABAJO)
             </button>
         </div>
     </section>
 
-    <footer id="contact" class="brand-footer-container">
-        <div class="footer-row-elements content-wrapper">
-            <div class="footer-phone-directory">
-                <span><i class="fa-solid fa-phone"></i> 509 834 9198</span>
-                <span><i class="fa-solid fa-phone"></i> 509 83349198</span>
+    <footer class="footer-strip">
+        <div class="footer-content-wrapper">
+            <div class="footer-phones">
+                <i class="fa-solid fa-phone"></i> 509 834 9198 &nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-solid fa-globe"></i> 509 83349198
             </div>
-            <div class="footer-social-channels">
+            <div class="footer-social-icons">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
-            <div class="cloud-hosting-tag">
-                <i class="fa-cloud fa-solid"></i> Google Cloud Hosting
+            <div class="footer-cloud-tag">
+                <i class="fa-solid fa-cloud"></i> Google Cloud Hosting
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
