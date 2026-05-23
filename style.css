@@ -148,34 +148,36 @@ body {
 .btn-white { background-color: var(--pure-white); }
 .btn-gold { background-color: var(--gold-brushed-hex); color: var(--pure-white); }
 
-/* CARDS PLATFORM HOUSING */
+/* MIDDLE SECTION CONTAINER HOUSING */
 .cards-section {
-    padding: 30px 0;
+    padding: 40px 0;
+    background-color: var(--offwhite-bg);
 }
 
 .cards-container {
-    width: 94%;
+    width: 96%;
     max-width: 1140px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    align-items: stretch;
 }
 
+/* CARDS STRUCTURE */
 .info-card {
     background-color: var(--pure-white);
     border: 2px solid var(--card-border-gold);
-    border-radius: 10px;
+    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
 }
 
 .card-img-wrapper {
     width: 100%;
-    height: 200px;
-    background-color: #f7f7f7;
+    height: 220px;
     overflow: hidden;
 }
 
@@ -185,10 +187,11 @@ body {
     object-fit: cover;
 }
 
-.card-img-wrapper.padding-x-classic {
-    padding: 10px 20px;
+/* Sizing Adjustments for the Flatbed Trailer Image Container */
+.card-img-wrapper.trailer-padding {
+    padding: 0 35px;
     background-color: var(--pure-white);
-    height: 150px;
+    height: 140px;
 }
 
 .card-img-wrapper .contain-img {
@@ -196,105 +199,128 @@ body {
 }
 
 .card-content {
-    padding: 15px 20px;
+    padding: 20px 25px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
     flex-grow: 1;
 }
 
-.padding-top-fix { padding-bottom: 0px; }
-.text-center { text-align: center; }
-.bold-text { font-weight: bold; }
-.color-red { color: var(--cherry-red-banner); }
-.gray-text { color: var(--text-muted-gray); }
-.text-small { font-size: 0.8rem !important; }
+.header-padding-fix { padding-top: 25px; padding-bottom: 5px; }
+.body-padding-fix { padding-top: 10px; }
 
-.spacing-dense {
-    line-height: 1.35;
-    font-size: 0.88rem;
-    text-align: center;
-}
-
-.card-divider {
-    height: 1px;
-    background-color: #dddddd;
-    margin: 2px 0;
-}
-
-.schedule-block {
-    text-align: center;
-    font-size: 0.82rem;
-    font-weight: bold;
-    background-color: #fcfcfc;
-    padding: 8px;
-    border: 1px dashed #cccccc;
-    border-radius: 4px;
-    margin-top: auto;
+/* TYPOGRAPHY PARAGRAPHS */
+.text-block {
+    color: #111111;
     line-height: 1.4;
 }
 
-/* EXTRA FLATBED STYLING BLOCKS */
+.text-start { text-align: left; }
+.bold-text { font-weight: bold; }
+.color-red { color: var(--cherry-red-banner); }
+
+.font-large { font-size: 1.05rem; }
+.font-medium { font-size: 0.95rem; }
+.text-small { font-size: 0.88rem !important; }
+
+/* MARGIN SPACING BLOCKS */
+.margin-top-xs { margin-top: 5px; }
+.margin-top-sm { margin-top: 12px; }
+.margin-top-md { margin-top: 22px; }
+
+/* SCHEDULE IN LEFT CARD */
+.schedule-block {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.45;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+/* FLATBED TEXT TITLES (RIGHT CARD) */
 .flatbed-title {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: bold;
     text-align: center;
+    letter-spacing: 0.2px;
 }
 
 .flatbed-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     font-weight: bold;
     text-align: center;
-    color: var(--text-muted-gray);
-    margin-top: -6px;
-    line-height: 1.2;
+    color: #111111;
+    margin-top: 3px;
+    line-height: 1.25;
 }
 
+/* SPLIT SIDE-BY-SIDE GRID */
 .split-info-layout {
     display: flex;
     gap: 15px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
-.split-left { width: 50%; font-size: 0.85rem; line-height: 1.35; }
-.split-right { width: 50%; }
+.split-left {
+    width: 50%;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.split-right {
+    width: 50%;
+    border-left: 1px solid var(--card-border-gold);
+    padding-left: 20px;
+}
 
 .bullet-list-bold {
     list-style: none;
-    font-size: 0.82rem;
+    font-size: 0.92rem;
     font-weight: bold;
-    line-height: 1.4;
+    line-height: 1.45;
+    color: #000000;
 }
 
 .hours-badge-box {
-    background-color: var(--offwhite-bg);
-    border: 1px solid #dbdbdb;
-    font-size: 0.78rem;
+    font-size: 0.88rem;
     font-weight: bold;
     text-align: center;
-    padding: 5px;
-    margin-top: 10px;
-    border-radius: 4px;
-    line-height: 1.3;
+    color: #000000;
+    line-height: 1.35;
+    margin-top: 15px;
 }
 
+/* FOOTER MARGINS INSIDE CARDS */
 .footer-notice-text {
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     text-align: center;
-    margin: 5px 0;
-    line-height: 1.3;
+    margin: 25px 0 10px 0;
+    line-height: 1.4;
 }
 
 .card-footer-phone {
-    background-color: #fdfaf2;
-    border-top: 1px solid var(--card-border-gold);
-    padding: 10px;
     text-align: center;
     font-weight: bold;
-    font-size: 1rem;
-    color: var(--text-charcoal);
+    font-size: 1.15rem;
+    color: #000000;
     margin-top: auto;
-    letter-spacing: 0.2px;
+    padding-top: 15px;
+    letter-spacing: 0.3px;
+}
+
+.card-footer-phone i {
+    margin-right: 4px;
+}
+
+/* RESPONSIVE SCALING */
+@media(max-width: 992px) {
+    .cards-container { grid-template-columns: 1fr; }
+    .split-info-layout { flex-direction: column; gap: 20px; }
+    .split-right { border-left: none; padding-left: 0; }
 }
 
 /* CONCRETE PORTFOLIO GALLERY GRAPHICS */
